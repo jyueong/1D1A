@@ -1,13 +1,14 @@
 from collections import deque
 
+
 def fun1(q):
     q.popleft()
 
 def fun2(q):
-    q.append(q.popleft())
+    q.rotate(-1)
 
 def fun3(q):
-    q.appendleft(q.pop())
+    q.rotate(1)
 
 
 N, M = map(int, input().split())
