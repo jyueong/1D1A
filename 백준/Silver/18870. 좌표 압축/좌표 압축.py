@@ -1,6 +1,6 @@
 N = int(input())
 lst = list(map(int, input().split()))
-lst_s = sorted(list(set(lst)))
+lst_s = sorted(set(lst))
 dict_lst = {}
 
 for i in range(len(lst_s)):
