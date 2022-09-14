@@ -7,13 +7,8 @@ if r == 0:
     ans = omg*(omg+1)*3 - omg
 elif r == 1:
     ans = omg*(omg+1)*3 - omg + omg + 1
-elif r == 2:
-    ans = omg*(omg+1)*3 - omg + 2*(omg + 1) - 1
-elif r == 3:
-    ans = omg*(omg+1)*3 - omg + 3*(omg + 1) - 1
-elif r == 4:
-    ans = omg * (omg + 1) * 3 - omg + 4 * (omg + 1) - 1
-elif r == 5:
-    ans = omg * (omg + 1) * 3 - omg + 5 * (omg + 1) - 1
-
+for i in range(2, 6):
+    if r == i:
+        ans = omg * (omg + 1) * 3 - omg + i * (omg + 1) - 1
+        
 print(ans%1000000)
